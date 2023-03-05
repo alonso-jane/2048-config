@@ -50,6 +50,8 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
+    link.argocd.argoproj.io/external-link: http://2048.janeperf.com
+
 
 spec:
   rules:
