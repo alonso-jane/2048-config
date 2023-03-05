@@ -51,8 +51,6 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
     link.argocd.argoproj.io/external-link: https://2048.janeperf.com
-
-
 spec:
   rules:
     - host: 2048.janeperf.com
@@ -65,6 +63,3 @@ spec:
               name: service-2048
               port:
                 number: 80
-  tls:
-  - hosts:
-    - 2048.janeperf.com
