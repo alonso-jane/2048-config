@@ -7,7 +7,6 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
-    alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:us-west-2:055178831656:certificate/52203116-1388-40f5-8cf3-1f5bd897b9e4"
     link.argocd.argoproj.io/external-link: https://2048.janeperf.com
 spec:
   rules:
