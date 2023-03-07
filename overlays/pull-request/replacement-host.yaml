@@ -9,7 +9,6 @@ targets:
     fieldPaths:
       - spec.rules.0.host
       - spec.tls.0.hosts.0
-      - metadata.annotations.link.argocd.argoproj.io/external-link
 ---
 source:
   kind: Ingress
