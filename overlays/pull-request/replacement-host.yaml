@@ -7,5 +7,5 @@ targets:
       kind: Ingress
       name: ingress-2048
     fieldPaths:
-      # - spec.rules.0.host
+      - spec.rules.0.host
       - spec.tls.0.hosts.0

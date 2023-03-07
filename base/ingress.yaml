@@ -11,7 +11,7 @@ metadata:
     link.argocd.argoproj.io/external-link: https://2048.janeperf.com
 spec:
   rules:
-    - #host: 2048.janeperf.com
+    - host: 2048.janeperf.com
       http:
         paths:
         - pathType: Prefix
