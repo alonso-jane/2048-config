@@ -7,16 +7,5 @@ targets:
       kind: Ingress
       name: ingress-2048
     fieldPaths:
-      - spec.rules.0.host
+      # - spec.rules.0.host
       - spec.tls.0.hosts.0
----
-source:
-  kind: Ingress
-  name: ingress-2048
-  fieldPath: metadata.annotations.app/param-host-url
-targets:
-  - select:
-      kind: Ingress
-      name: ingress-2048
-    fieldPaths:
-      - metadata.annotations.link.argocd.argoproj.io/external-link
