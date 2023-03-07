@@ -3,4 +3,6 @@ kind: Kustomization
 
 resources:
 - ../../base
-- ingress.yaml
+
+replacements:
+- path: replacement-host.yaml

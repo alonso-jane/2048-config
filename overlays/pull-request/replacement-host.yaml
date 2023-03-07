@@ -1,0 +1,23 @@
+source:
+  kind: Ingress
+  name: ingress-2048
+  fieldPath: metadata.annotations.app/param-host
+targets:
+  - select:
+      kind: Ingress
+      name: ingress-2048
+    fieldPaths:
+      - spec.rules.0.host
+      - spec.tls.0.hosts.0
+      - metadata.annotations.link.argocd.argoproj.io/external-link
+---
+source:
+  kind: Ingress
+  name: ingress-2048
+  fieldPath: metadata.annotations.app/param-host-url
+targets:
+  - select:
+      kind: Ingress
+      name: ingress-2048
+    fieldPaths:
+      - metadata.annotations.link.argocd.argoproj.io/external-link
