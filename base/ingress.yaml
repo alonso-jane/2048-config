@@ -6,6 +6,7 @@ metadata:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/group.name: "alb-2048"
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS":443}]'
     link.argocd.argoproj.io/external-link: https://2048.janeperf.com
 spec:
