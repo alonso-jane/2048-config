@@ -15,7 +15,7 @@ spec:
     - host: 2048.janeperf.com
       http:
         paths:
-        - pathType: Prefix
+        - pathType: ImplementationSpecific
           path: "/"
           backend:
             service:
