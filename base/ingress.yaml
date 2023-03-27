@@ -11,7 +11,7 @@ metadata:
     alb.ingress.kubernetes.io/ssl-redirect: '443'
 spec:
   rules:
-    - host: 2048.janeperf.com
+    - host: 2048.us1.janepods.com
       http:
         paths:
         - pathType: Prefix
@@ -23,4 +23,4 @@ spec:
                 number: 80
   tls:
     - hosts:
-      - 2048.janeperf.com
+      - 2048.us1.janepods.com
