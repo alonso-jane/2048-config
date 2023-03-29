@@ -3,21 +3,20 @@ kind: Kustomization
 
 resources:
 - ../../base
+
 nameSuffix: "-2048"
 commonAnnotations:
   app/param-host: "2048.us1.janepods.com"
 
-
-transformers:
-  - |-
-    source:
+replacements:
+  - source:
       kind: Ingress
-      name: ingress #Change me
+      name: ingress
       fieldPath: metadata.annotations.app/param-host
     targets:
       - select:
           kind: Ingress
-          name: ingress #Change me
+          name: ingress
         fieldPaths:
           - spec.rules.0.host
           - spec.tls.0.hosts.0

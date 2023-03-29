@@ -1,11 +1,11 @@
 source:
   kind: Ingress
-  name: ingress-2048 #Change me
+  name: ingress
   fieldPath: metadata.annotations.app/param-host
 targets:
   - select:
       kind: Ingress
-      name: ingress-2048 #Change me
+      name: ingress
     fieldPaths:
       - spec.rules.0.host
       - spec.tls.0.hosts.0
