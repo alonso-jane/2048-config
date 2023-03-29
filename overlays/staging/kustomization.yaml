@@ -6,3 +6,6 @@ resources:
 
 commonAnnotations:
   app/param-host: "2048.us1.janepods.com"
+
+transformers:
+  - ../../transformers/host.yaml
