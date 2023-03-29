@@ -4,3 +4,8 @@ kind: Kustomization
 resources:
 - ../../base
 
+commonAnnotations:
+  app/param-host: "2048.us1.janepods.com"
+
+replacements:
+- path: ../../replacement/host.yaml
