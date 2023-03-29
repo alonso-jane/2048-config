@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployment-2048
+  name: deployment
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name: app-2048
+      app.kubernetes.io/name: app
   replicas: 1
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: app-2048
+        app.kubernetes.io/name: app
     spec:
       containers:
       - image: ghcr.io/alonso-jane/2048:04fba483b5de2701222a6726f399c87bc6e9d881
-        name: app-2048
+        name: app
         ports:
         - containerPort: 80
